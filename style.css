@@ -4,6 +4,9 @@ body{
     font-family: sans-serif;
     text-indent: 1em;
     line-height: 1.5;
+    width: 80%;
+    max-width: 1280px;
+    margin: 10%;
 }
 
 strong{
@@ -19,11 +22,15 @@ a{
 }
 
 h1{
+    display: inline-block;
     text-align: center;
     font-size: 1.8rem;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 h2{
+    display: inline-block;
     text-align: center;
     font-size: 1.4rem;
 }
@@ -36,3 +43,62 @@ h3{
 abbr{
     font-variant: small-caps;
 }
+
+.intro{
+    height: 550px;
+}
+
+header{
+    background-color: #30EB01;
+    color: black;
+}
+
+#design-archives{
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 1em;
+}
+
+.sidebar{
+    text-align: center;
+}
+
+footer{
+    margin: 4%;
+    background-color: #0cab6e;
+}
+
+footer>a{
+    border: solid 2px;
+    display: block;
+    padding: 0.5em;
+    color: #176304;
+}
+
+.page-wrapper{
+    position: relative;
+}
+
+.explanation{
+    width: 60%;
+    margin-right: 35%;
+    border-right: solid 1px;
+    border-color:  #1f295c;
+    padding: 2%;
+}
+
+.design-selection{
+    position: absolute;
+    top: 560px;
+    left: 60%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
