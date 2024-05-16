@@ -19,6 +19,16 @@ em{
 
 a{
     color: #0cab6e;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #063625;
+}
+
+a:visited{
+    font-weight: normal;
+    color: rgb(208, 255, 0);
 }
 
 h1{
@@ -70,6 +80,8 @@ li{
 }
 
 footer{
+    display: flex;
+    flex-flow: column wrap;
     margin: 4%;
     background-color: #0cab6e;
 }
@@ -95,10 +107,74 @@ footer>a{
 
 .design-selection{
     position: absolute;
-    top: 560px;
+    top: 540px;
     left: 60%;
     padding-left: 2%;
-    padding-right: 2%;
 }
 
+.design-selection li{
+    border-top: 1px solid;
+}
+
+.design-selection li:last-child{
+    border-bottom: 1px solid;
+}
+
+
+.main .explanation p:first-of-type:first-letter{
+    font-size: 300%;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    padding-right: 5px;
+}
+
+.benefits{
+    display: flex;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.benefits h3{
+    float: right;
+    order: 2;
+    align-self: center;
+    flex-shrink: 30%;
+}
+
+.benefits p{
+    float: left;
+    order: 1;
+    flex-shrink: 70%;
+}
+
+.participation{
+    display: flex;
+    flex-shrink: 50%;
+    margin-top: 20%;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 10px;
+}
+
+.participation p:first-child{
+    display: flex;
+    flex-shrink: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+}
+.participation p:only-child{
+    display: flex;
+    flex-shrink: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 1px;
+}
+.participation h3{
+    flex-shrink:  50%;
+    align-self: center;
+    float: left;
+    margin-right: 20px;
+}
 
