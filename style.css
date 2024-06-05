@@ -1,4 +1,5 @@
 body{
+    float: none;
     color: #30EB01;
     background-color: black;
     font-family: sans-serif;
@@ -88,7 +89,6 @@ footer{
 
 footer>a{
     border: solid 2px;
-    display: block;
     padding: 0.5em;
     color: #176304;
 }
@@ -106,14 +106,15 @@ footer>a{
 }
 
 .design-selection{
-    position: absolute;
+    position: static;
     top: 540px;
     left: 60%;
     padding-left: 2%;
 }
 
 .design-selection li{
-    border-top: 1px solid;
+    border-top: 1px;
+    border-top-style: solid;
 }
 
 .design-selection li:last-child{
@@ -151,8 +152,10 @@ footer>a{
     display: flex;
     flex-shrink: 50%;
     margin-top: 20%;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-top: 1px; 
+    border-top-style: solid;
     padding: 10px;
 }
 
@@ -176,5 +179,9 @@ footer>a{
     align-self: center;
     float: left;
     margin-right: 20px;
+}
+
+.summary{
+    text-align: center;
 }
 
